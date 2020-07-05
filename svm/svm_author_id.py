@@ -28,6 +28,8 @@ from sklearn.svm import SVC
 svc = SVC(kernel=linear)
 svc.fit(features_train,features_test)
 predict = svc.predict(labels_train)
+svc.score(features_train,labels_train)
+svc.score(features_test,labels_test)
 #########################################################
 
 
